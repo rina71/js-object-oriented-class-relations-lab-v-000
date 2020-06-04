@@ -19,7 +19,7 @@ class Driver {
       function(trip){
         if (trip.driverId === this.id){
           debugger
-          return trip.passengerId;
+          return trip.passenger();
         }
       }.bind(this)
     );
