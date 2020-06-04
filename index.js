@@ -15,7 +15,7 @@ class Driver {
     );
   }
   passengers(){
-    return store.trips().bind(this);
+    return store.trips.bind(this);
   //   return store.trips.filter(
   //     function(trip){
   //       if (trip.driverId === this.id){
