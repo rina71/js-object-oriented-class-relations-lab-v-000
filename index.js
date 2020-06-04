@@ -17,7 +17,7 @@ class Driver {
   passengers(){
     return this.trips().map(
       function(trip){
-        trip.passenger();
+        return trip.passenger();
       }.bind(this)
     );
   }
