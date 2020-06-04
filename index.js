@@ -15,11 +15,10 @@ class Driver {
     );
   }
   passengers(){
-    return store.passengers.filter(
-      function(passenger){
-
-        return passenger.trips === this.id;
-      }.bind(this)
+    this.trips().filter(
+      function(trip){
+        return trip.passengerId;
+      }
     );
   }
 }
