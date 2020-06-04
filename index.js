@@ -17,8 +17,9 @@ class Driver {
   passengers(){
     store.trips.filter(
       function(trip){
+          debugger
         if (trip.driverId === this.id)
-        debugger
+
         return trip.passenger()
       }
     );
