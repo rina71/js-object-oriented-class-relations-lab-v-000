@@ -15,6 +15,7 @@ class Driver {
     );
   }
   passengers(){
+    debugger
     this.trips().filter(
       function(trip){
         return trip.passengerId;
