@@ -20,7 +20,7 @@ class Driver {
         if (trip.driverId === this.id){
           trip.passenger();
         }
-      }
+      }.bind(this)
     );
   }
 }
