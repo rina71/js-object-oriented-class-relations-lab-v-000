@@ -19,7 +19,7 @@ class Driver {
     this.trips().filter(
       function(trip){
         return trip.passengerId;
-      }
+      }.bind(this)
     );
   }
 }
