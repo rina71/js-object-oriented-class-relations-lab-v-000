@@ -19,7 +19,7 @@ class Driver {
       function(trip){
         if (trip.driverId === this.id){
 
-          return Object.values(trip);
+          return Object.values(trip.passenger());
         }
       }.bind(this)
     );
