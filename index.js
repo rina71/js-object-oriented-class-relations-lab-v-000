@@ -15,16 +15,15 @@ class Driver {
     );
   }
   passengers(){
-    return store.trips;
-  //   return store.trips.filter(
-  //     function(trip){
-  //       if (trip.driverId === this.id){
-  //
-  //         return Object.values(trip.passenger());
-  //       }
-  //     }.bind(this)
-  //   );
-  // }
+    return this.trips().filter(
+      function(trip){
+        if (trip.driverId === this.id){
+  
+          return Object.values(trip.passenger());
+        }
+      }.bind(this)
+    );
+  }
 }
 
 let passengerId = 0
